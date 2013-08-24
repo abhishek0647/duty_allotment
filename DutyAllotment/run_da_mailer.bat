@@ -1,0 +1,1 @@
+java -classpath ./lib/java-mail-1.4.4.jar;./classes org.da.DAReader ./resource/da.properties ./resource/duty_oct_2.csv > ./out/emailer.txt

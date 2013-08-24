@@ -1,0 +1,1 @@
+javac -classpath ./lib/java-mail-1.4.4.jar -d ./classes src/org/da/*.java
