@@ -24,8 +24,8 @@ public class SendMail {
         Properties props = new Properties ();
         props.put("mail.smtp.starttls.enable", "true");
         props.put("mail.smtp.host", smtpDetails.getProperty(SMTP_HOST, "smtp.gmail.com"));
-        props.put("mail.smtp.user", smtpDetails.getProperty(SMTP_FROM, "smvitvigilance"));
-        props.put("mail.smtp.password", smtpDetails.getProperty(SMTP_PASSWORD, "smvitvigilance"));
+        props.put("mail.smtp.user", smtpDetails.getProperty(SMTP_FROM, "username"));
+        props.put("mail.smtp.password", smtpDetails.getProperty(SMTP_PASSWORD, "password"));
         props.put("mail.smtp.port", smtpDetails.getProperty(SMTP_PORT, "587"));
         props.put("mail.smtp.auth", smtpDetails.getProperty(SMTP_AUTH, "true"));
         sendMailInternal(to, props.getProperty("mail.smtp.user"), subject, content, props);
@@ -35,8 +35,8 @@ public class SendMail {
         Properties props = new Properties ();
         props.put("mail.smtp.starttls.enable", "true");
         props.put("mail.smtp.host", "smtp.gmail.com");
-        props.put("mail.smtp.user", "smvitvigilance");
-        props.put("mail.smtp.password", "smvitvigilance");
+        props.put("mail.smtp.user", "username");
+        props.put("mail.smtp.password", "password");
         props.put("mail.smtp.port", "587");
         props.put("mail.smtp.auth", "true");
         sendMailInternal(to, props.getProperty("mail.smtp.user"), subject, content, props);
